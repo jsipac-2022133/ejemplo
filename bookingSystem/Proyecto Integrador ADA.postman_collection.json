@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "3b53f521-169f-4cf2-8cff-11542e856c33",
+		"name": "Proyecto Integrador ADA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33173724"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Mostrar Usuario",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NzBkYWQ4NTExZjVkNDEwZmE3ZGY4ZDYiLCJpYXQiOjE3Mjg5NDk5ODN9.CO2gCeNo6_6tSvvKL-g1rp_oQXuL11xT10CPY9g6u04",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"melisa@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/usuarios/66f4766ced37cb1d6edb38b6"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/usuarios/66f571297ded841b8c4027d8"
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar Usuario",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NzBkYWQ4NTExZjVkNDEwZmE3ZGY4ZDYiLCJpYXQiOjE3Mjg5NDk5ODN9.CO2gCeNo6_6tSvvKL-g1rp_oQXuL11xT10CPY9g6u04",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"james\",\r\n    \"email\": \"james@gmail.com\",\r\n    \"password\": \"james\",\r\n    \"telefono\": \"56787653\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/usuarios"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reserva",
+			"item": [
+				{
+					"name": "Agregar Reserva",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NzBkYjI0ZWFlZmQyMTVkZTZiYzA2ZWUiLCJpYXQiOjE3MjkwMDY2MjZ9.FtvPVP6Vt296mKXBqclYAQtoaqvGioFVpQxJ7PxnkBY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuarioId\": \"66f4766ced37cb1d6edb38b6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/reservas"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Reservas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NzBkYjI0ZWFlZmQyMTVkZTZiYzA2ZWUiLCJpYXQiOjE3MjkwODY4NjZ9.rhwMAYIizU637nUG-N7-tMZRSXJw9HgNk3Th69Vyq6o",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/reservas"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Reservas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/reservas/66f4814c3d6f70257aa8a1f5"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Reserva",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuarioId\": \"66f4766ced37cb1d6edb38b6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/reservas/66f4766ced37cb1d6edb38b6"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Reserva",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2NzBkYjI0ZWFlZmQyMTVkZTZiYzA2ZWUiLCJpYXQiOjE3MjkwODY4NjZ9.rhwMAYIizU637nUG-N7-tMZRSXJw9HgNk3Th69Vyq6o",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8080/reservas/670e93a7cd5d862f40cb1c82"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mildredd@gmail.com\",\r\n    \"password\": \"mildredd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/auth"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

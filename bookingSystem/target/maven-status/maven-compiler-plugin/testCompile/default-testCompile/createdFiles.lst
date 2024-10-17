@@ -1,0 +1,4 @@
+com\jamessipac\bookingSystem\service\AuthServiceTest.class
+com\jamessipac\bookingSystem\BookingSystemApplicationTests.class
+com\jamessipac\bookingSystem\service\UsuarioServiceImplTest.class
+com\jamessipac\bookingSystem\service\ReservaServiceImplTest.class
